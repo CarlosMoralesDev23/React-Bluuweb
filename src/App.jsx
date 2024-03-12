@@ -1,4 +1,6 @@
 import { Fragment } from "react";
+import montañaNevada from "./assets/images/montaña-nevada.jpg"
+
 
 const Button = () => {
 
@@ -16,7 +18,7 @@ const OfflineText = () => {
 const App = () => {
     const title = `Mi titulo desde una constante`;
     const classTitle = "text-center";
-    const pathImg = "https://picsum.photos/seed/picsum/200/300";
+    const pathImg = montañaNevada;
     const user = true
 
     return (
@@ -25,7 +27,7 @@ const App = () => {
             <img src={pathImg} alt="montaña nevada" />
             <Button/>
             {
-                user ? <OnlineText/> : <OfflineText/>
+                user && <OnlineText/>
             }
         </Fragment>
     );
