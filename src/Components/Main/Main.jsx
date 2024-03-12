@@ -1,14 +1,14 @@
 import { Button } from "./Buttons/Button";
 import { ImagenMontaña } from "./Imagen/ImageMontaña"
 import { ListaFruit } from "./Lista/ListaFruit";
-import { MensajeCondicional } from "./MensajeCondicional/MensajeCondicional";
+import { Welcome } from "./Welcome/MensajeCondicional";
 
-
+const user = true;
 
 export const Main = ()=>{
     return (
         <>
-            <MensajeCondicional/>
+            <Welcome user = {user} />
             <ImagenMontaña />
             <Button text="botón 2" edad="10" />
             <Button text="botón 3" edad="10" />

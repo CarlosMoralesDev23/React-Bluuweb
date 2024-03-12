@@ -1,5 +1,5 @@
 
 
-export const ItemFruit = (props)=>{
-    return <li>{props.fruit}</li>;
+export const ItemFruit = ({fruit})=>{
+    return <li>{fruit}</li>;
 }
