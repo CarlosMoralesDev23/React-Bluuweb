@@ -1,9 +1,9 @@
 import { Button } from "./Buttons/Button";
 import { ImagenMontaña } from "./Imagen/ImageMontaña"
 import { ListaFruit } from "./Lista/ListaFruit";
-import { Welcome } from "./Welcome/MensajeCondicional";
+import { Welcome } from "./Welcome/Welcome";
 
-const user = true;
+const user = false;
 
 export const Main = ()=>{
     return (
