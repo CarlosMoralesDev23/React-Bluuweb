@@ -22,6 +22,9 @@ const OfflineText = () => {
     return <h3>Offline</h3>;
 };
 
+const ItemFruit = (props)=>{
+    return <li>{props.fruit}</li>;
+}
 
 const fruits = ['🍉', '🥥', '🍇']
 
@@ -41,9 +44,9 @@ const App = () => {
 
             {user && <OnlineText />}
             <ul>
-                {fruits.map((fruit, index) => {
-                    return <li key={index}>{fruit}</li>;
-                })}
+                {fruits.map((fruit, index)=>(
+                    <ItemFruit key={index} fruit={fruit} />
+                ))}
             </ul>
         </Fragment>
     );
