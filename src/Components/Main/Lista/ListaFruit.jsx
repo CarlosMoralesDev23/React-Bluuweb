@@ -1,9 +1,8 @@
 import { ItemFruit } from "./ItemFruit";
 
-const fruits = ["🍉", "🥥", "🍇"];
 
 
-export const ListaFruit = ()=>{
+export const ListaFruit = ({fruits})=>{
     return (
         <>
             <ul>

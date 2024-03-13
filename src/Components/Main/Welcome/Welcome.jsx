@@ -1,4 +1,4 @@
 
 export const Welcome =({user})=>{
-    return <>{user ? <h3>Online</h3> : <h3>Offline</h3>}</>;
+    return <>{<h3>{user ? 'Online' : 'Offline'}</h3>}</>;
 }
